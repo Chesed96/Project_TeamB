@@ -1,0 +1,56 @@
+
+
+시험응시 화면(Main)(장희운)
+- 로그인(수험번호, 성명)
+- 수험번호 부여(중복 안되게)
+- 수험번호, 성명 입력
+-시험보기 버튼 (시험보기 화면), 응시결과 버튼(응시결과 화면-수험번호와 성명 입력 후 조회)
+
+시험보기 화면(염주은)
+- 과목 선택(option태그, 과목에 따라 시험문제 달라짐)
+- 시험지
+- 정답 체크(라디오 체크박스)
+- 응시완료(채점 결과 화면)
+
+채점 결과(오대욱)
+- 문제번호와 정답
+- 문제번호와 응시자가 선택한 답 비교
+- ox로 결과 표시
+
+응시결과(강은혜)
+- DB와 연동하여
+  수험번호(code), 성명(name), 과목(subject), 점수(score), 합격여부(pass), 시험응시날짜(day) 출력
+- 채점 결과 버튼(채점 결과 화면)
+- 메인화면 버튼(시험응시 화면)
+
+<네이밍 통일> - 프로젝트 진행중 혹은 코드 최적화시 바뀔 수 있음
+   '*'<-- 기본적으로 있어야 하는 파일들
+1. 프로젝트 파일
+  -06.B_Project
+2. pakage
+  - com.hanul.action(action 파일들) 
+    *Action.java(인터페이스)
+    *ActionForward.java
+
+  - com.hanul.controller(controller역할의 servlet 파일)
+    *TestFrontController.java(servlet)
+
+  - com.hanul.dao(DAO 파일)
+
+  - com.hanul.dto(DTO 파일)
+
+  - com.hanul.mybatis(mybatis 설정 관련 파일)
+    *db.properties(file)
+    *SqlMapConfig.xml(xml파일)
+    *testMapper.xml(xml파일)
+
+3. DAO
+  - StudentDAO.java (수험생 관련)
+  - TestDAO.java(시험 관련)
+
+4. DTO 
+  - StudentDTO.java(수험생 관련)
+  - TestDTO.java(시험 관련)
+
+5. html, jsp 파일들
+

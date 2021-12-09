@@ -1,0 +1,8 @@
+시험응시 화면(main)
+/main.do
+시험보기 화면
+/test.do
+채점결과 화면
+/check.do
+응시결과 화면
+/resultList.do
